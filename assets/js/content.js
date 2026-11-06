@@ -107,7 +107,7 @@ window.MS = {
       kind:"Blouse",
       badge:"Bán chạy nhất",
       priceOld:429000,
-      price:379000,
+      price:429000,
       claim:"Mát mịn · Co giãn 4 chiều · Hạn chế nhăn nhàu",
       short:"Chiếc áo bán chạy nhất của MedStyle. Cotton lạnh dày dặn nhưng vẫn thoáng, co giãn 4 chiều nên đi trực cả ngày không bó.",
       forWho:["bacsi","sinhvien"],
@@ -125,7 +125,7 @@ window.MS = {
       kind:"Blouse",
       badge:"Mới",
       priceOld:550000,
-      price:490000,
+      price:550000,
       claim:"Cổ vest sâu · Túi ẩn · Bền đẹp, sang trọng",
       short:"Dáng đứng như Blouse Vest nhưng nhẹ và co giãn hơn nhiều. Hai chi tiết đáng tiền: cổ vest sâu và túi ẩn.",
       forWho:["bacsi"],
@@ -161,7 +161,7 @@ window.MS = {
       kind:"Blouse",
       badge:"Đang giảm",
       priceOld:449000,
-      price:399000,
+      price:449000,
       claim:"Cổ 2 ve hoặc cổ trụ · Cotton lạnh",
       short:"Dáng riêng cho điều dưỡng, không phải blouse bác sĩ thu nhỏ. Chọn cổ 2 ve hoặc cổ trụ.",
       forWho:["dieuduong"],
@@ -173,28 +173,47 @@ window.MS = {
         nam:["sp-blouse-dieu-duong-nam-1.jpg","sp-blouse-dieu-duong-nam-2.jpg","sp-blouse-dieu-duong-nam-3.jpg"]
       }
     },
-    {id:"blouse-ktv",name:"Blouse Kỹ thuật viên",kind:"Blouse",badge:"",priceOld:449000,price:399000,claim:"Dáng chuẩn ngành xét nghiệm",short:"Dáng dành riêng cho kỹ thuật viên và sinh viên kỹ thuật xét nghiệm.",forWho:["ktv"],forWhoText:"Kỹ thuật viên · Sinh viên kỹ thuật xét nghiệm",features:["Form dáng đúng chuẩn ngành kỹ thuật","Cotton lạnh mát mịn, thoáng khí","Co giãn 4 chiều, linh hoạt khi làm việc trong lab","Hạn chế nhăn nhàu"],
+    {id:"blouse-ktv",
+      name:"Blouse Kỹ thuật viên",
+      kind:"Blouse",
+      badge:"",
+      priceOld:449000,
+      price:449000,
+      claim:"Dáng chuẩn ngành xét nghiệm",
+      short:"Dáng dành riêng cho kỹ thuật viên và sinh viên kỹ thuật xét nghiệm.",
+      forWho:["ktv"],
+      forWhoText:"Kỹ thuật viên · Sinh viên kỹ thuật xét nghiệm",
+      features:["Form dáng đúng chuẩn ngành kỹ thuật","Cotton lạnh mát mịn, thoáng khí","Co giãn 4 chiều, linh hoạt khi làm việc trong lab","Hạn chế nhăn nhàu"],
       img:"sp-blouse-ktv-nu-1.jpg",
       imgs:{
         nu:["sp-blouse-ktv-nu-1.jpg","sp-blouse-ktv-nu-2.jpg","sp-blouse-ktv-nu-3.jpg"],
         nam:["sp-blouse-ktv-nam-1.jpg","sp-blouse-ktv-nam-2.jpg","sp-blouse-ktv-nam-3.jpg"]
       }
     },
-    {id:"blouse-vest",name:"Blouse Vest",kind:"Blouse",badge:"Cao cấp",priceOld:"",price:750000,claim:"Kaki lụa · Đệm vai · Đứng dáng như veston",short:"Chiếc áo cho những dịp phải trang trọng: hội họp, giảng dạy, lễ tốt nghiệp.",forWho:["bacsi"],forWhoText:"Bác sĩ lâu năm · Giảng viên · Sự kiện quan trọng",features:["Kaki lụa dày dặn, giữ form tốt","Cổ vest chuẩn, đệm vai nhẹ tạo dáng lịch lãm","Co giãn 2 chiều, đường may sắc nét","Tôn dáng cho cả nam và nữ"],
+    {id:"blouse-vest",name:"Blouse Vest",kind:"Blouse",badge:"Cao cấp",
+      priceOld:"",
+      price:750000,
+      claim:"Kaki lụa · Đệm vai · Đứng dáng như veston",short:"Chiếc áo cho những dịp phải trang trọng: hội họp, giảng dạy, lễ tốt nghiệp.",forWho:["bacsi"],forWhoText:"Bác sĩ lâu năm · Giảng viên · Sự kiện quan trọng",features:["Kaki lụa dày dặn, giữ form tốt","Cổ vest chuẩn, đệm vai nhẹ tạo dáng lịch lãm","Co giãn 2 chiều, đường may sắc nét","Tôn dáng cho cả nam và nữ"],
       img:"sp-blouse-vest-nu-1.jpg",
       imgs:{
         nu:["sp-blouse-vest-nu-1.jpg","sp-blouse-vest-nu-2.jpg","sp-blouse-vest-nu-3.jpg"],
         nam:["sp-blouse-vest-nam-1.jpg","sp-blouse-vest-nam-2.jpg","sp-blouse-vest-nam-3.jpg"]
       }
     },
-    {id:"scrubs-plus",name:"Scrubs Plus",kind:"Scrubs",badge:"Mới",priceOld:"",price:490000,claim:"Cổ trụ (nữ) · Túi hông (nam) · Túi ngực phải",short:"Bản nâng cấp của Scrubs MsCool, chỉnh sửa cho phòng khám và spa — nơi chi tiết được để ý.",forWho:["scrubs","bacsi"],forWhoText:"Bác sĩ · Phòng khám · Spa",features:["Bản nữ: cổ trụ, kín đáo và thanh lịch khi phải cúi người liên tục","Bản nam: hai túi hông quần, đủ chỗ cho vật dụng y tế","Cả hai bản đều có túi ngực phải","Cotton lạnh, co giãn 4 chiều, hạn chế nhăn nhàu"],
+    {id:"scrubs-plus",name:"Scrubs Plus",kind:"Scrubs",badge:"Mới",
+      priceOld:"",
+      price:550000,
+      claim:"Cổ trụ (nữ) · Túi hông (nam) · Túi ngực phải",short:"Bản nâng cấp của Scrubs MsCool, chỉnh sửa cho phòng khám và spa — nơi chi tiết được để ý.",forWho:["scrubs","bacsi"],forWhoText:"Bác sĩ · Phòng khám · Spa",features:["Bản nữ: cổ trụ, kín đáo và thanh lịch khi phải cúi người liên tục","Bản nam: hai túi hông quần, đủ chỗ cho vật dụng y tế","Cả hai bản đều có túi ngực phải","Cotton lạnh, co giãn 4 chiều, hạn chế nhăn nhàu"],
       img:"sp-scrubs-plus-nu-1.jpg",
       imgs:{
         nu:["sp-scrubs-plus-nu-1.jpg","sp-scrubs-plus-nu-2.jpg","sp-scrubs-plus-nu-3.jpg"],
         nam:["sp-scrubs-plus-nam-1.jpg","sp-scrubs-plus-nam-2.jpg","sp-scrubs-plus-nam-3.jpg"]
       }
     },
-    {id:"scrubs-mscool",name:"Scrubs MsCool",kind:"Scrubs",badge:"200+ màu",priceOld:"",price:429000,claim:"Hơn 200 màu · Cotton lạnh · Nhẹ",short:"Bộ scrubs đi trực với bảng màu hơn 200 lựa chọn. Bán chạy nhất: Navy, Xanh Đen, Xanh Rêu, Caribean, Cổ Vịt.",forWho:["scrubs","sinhvien"],forWhoText:"Sinh viên · Người mới đi làm",features:["Hơn 200 màu — chọn theo khoa, theo nhóm, hay theo sở thích","Cotton lạnh mát mịn, thoáng khí","Form dáng chuẩn, hạn chế nhăn nhàu","Bán chạy: Navy · Xanh Đen · Xanh Rêu · Caribean · Cổ Vịt"],
+    {id:"scrubs-mscool",name:"Scrubs MsCool",kind:"Scrubs",badge:"200+ màu",
+      priceOld:"",
+      price:429000,
+      claim:"Hơn 200 màu · Cotton lạnh · Nhẹ",short:"Bộ scrubs đi trực với bảng màu hơn 200 lựa chọn. Bán chạy nhất: Navy, Xanh Đen, Xanh Rêu, Caribean, Cổ Vịt.",forWho:["scrubs","sinhvien"],forWhoText:"Sinh viên · Người mới đi làm",features:["Hơn 200 màu — chọn theo khoa, theo nhóm, hay theo sở thích","Cotton lạnh mát mịn, thoáng khí","Form dáng chuẩn, hạn chế nhăn nhàu","Bán chạy: Navy · Xanh Đen · Xanh Rêu · Caribean · Cổ Vịt"],
       img:"sp-scrubs-mscool-nu-1.jpg",
       imgs:{
         nu:["sp-scrubs-mscool-nu-1.jpg","sp-scrubs-mscool-nu-2.jpg","sp-scrubs-mscool-nu-3.jpg"],

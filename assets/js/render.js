@@ -77,7 +77,22 @@ function initShots(root=document){
 
 function cardHTML(p){
   const off=p.priceOld?Math.round((1-p.price/p.priceOld)*100):0,sale=off>0;
-  return `<article class="card" data-for="${p.forWho.join(" ")}" data-id="${p.id}"><div class="card__media">${p.badge?`<span class="card__badge${sale?" card__badge--sale":""}">${p.badge}</span>`:""}${genderShotsHTML(p,"3/4")}<div class="card__over"><p>${p.short}</p><span class="card__go">Chi tiết ${ICON.arrow}</span></div><a class="card__hit" href="products.html#${p.id}" aria-label="${p.name} — xem chi tiết"></a></div><div class="card__body"><span class="card__kind">${p.kind}</span><h3 class="card__name">${p.name}</h3><p class="card__claim">${p.claim}</p><div class="card__price"><b>${msPrice(p.price)}</b>${sale?`<s>${msPrice(p.priceOld)}</s><i>−${off}%</i>`:""}</div></div></article>`;
+  return `<article class="card" data-for="${p.forWho.join(" ")}" data-id="${p.id}"><div class="card__media">${p.badge?`<span class="card__badge${sale?" card__badge--sale":""}">${p.badge}</span>`:""}${genderShotsHTML(p,"3/4")}<div class="card__over"><p>${p.short}</p><span class="card__go">Chi tiết ${ICON.arrow}</span></div><a class="card__hit" href="products.html#${p.id}" aria-label="${p.name} — xem chi tiết"></a></div><div class="card__body"><span class="card__kind">${p.kind}</span><h3 class="card__name">${p.name}</h3><p class="card__claim">${p.claim}</p>
+  <div class="card__price">
+  ${p.id === "scrubs-mscool"
+    ? `<a
+        class="btn btn--pri cst__support"
+        href="#"
+        onclick="event.stopPropagation();openMess('web_sp_scrubs_mscool');return false"
+      >Tư vấn</a>`
+    : `<b>${msPrice(p.price)}</b>${sale
+        ? `<s>${msPrice(p.priceOld)}</s><i>−${off}%</i>`
+        : ""
+      }`
+  }
+</div>
+  </div>
+  </article>`;
 }
 function renderProducts(){const grid=one("pgrid");if(!grid)return;grid.innerHTML=MS.products.map(cardHTML).join("")}
 
